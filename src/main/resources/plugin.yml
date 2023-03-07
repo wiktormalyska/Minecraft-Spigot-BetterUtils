@@ -1,0 +1,4 @@
+name: BetterUtilities
+version: '${project.version}'
+main: org.bettermobs.betterutilities.BetterUtilities
+api-version: 1.19
