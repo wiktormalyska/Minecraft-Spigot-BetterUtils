@@ -5,3 +5,4 @@ THIS PLUGIN IS STILL IN PROGRESS
 
 Feachures:
 - Slabs to Planks crafting
+- Logs to Sticks crafting
