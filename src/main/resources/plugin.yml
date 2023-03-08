@@ -3,7 +3,7 @@ version: '${project.version}'
 main: org.bettermobs.betterutilities.BetterUtilities
 api-version: 1.19
 commands:
-  trashcan:
-    aliases: trash
-    description: Opens Trash Can
+  bu:
+    description: Main Command
     permission: bettermobs.trashcan
+    usage: bu <command>

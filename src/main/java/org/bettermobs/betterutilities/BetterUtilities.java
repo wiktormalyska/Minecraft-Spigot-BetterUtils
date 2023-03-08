@@ -1,24 +1,29 @@
 package org.bettermobs.betterutilities;
 
-import org.bettermobs.betterutilities.Commands.Trashcan;
+import org.bettermobs.betterutilities.Commands.MainCommand;
+import org.bettermobs.betterutilities.Commands.SubCommands.Reload;
+import org.bettermobs.betterutilities.Commands.SubCommands.Trashcan;
 import org.bettermobs.betterutilities.Utils.Crafting.Slabs;
 import org.bettermobs.betterutilities.Utils.Crafting.Sticks;
 import org.bettermobs.betterutilities.Utils.Permissions;
-import org.bukkit.command.SimpleCommandMap;
-import org.bukkit.plugin.SimplePluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.lang.reflect.Field;
-
 public final class BetterUtilities extends JavaPlugin {
+    String commandPrefix = "bu";
     @Override
     public void onEnable() {
         this.getLogger().log(java.util.logging.Level.INFO, "BetterUtilities is now enabled!");
 
+        this.saveDefaultConfig();
+
         Permissions permissions = new Permissions();
 
         permissions.addPermission("trashcan");
-        this.getCommand("trashcan").setExecutor(new Trashcan(permissions));
+        permissions.addPermission("reload");
+
+        this.getCommand("bu").setExecutor(new MainCommand(this, permissions, commandPrefix));
+
+
 
         Slabs.AddAllSlabsRecipe(this);
         Sticks.AddAllStickRecipes(this);
