@@ -2,3 +2,8 @@ name: BetterUtilities
 version: '1.0'
 main: org.bettermobs.betterutilities.BetterUtilities
 api-version: 1.19
+commands:
+  trashcan:
+    aliases: trash
+    description: Opens Trash Can
+    permission: bettermobs.trashcan
