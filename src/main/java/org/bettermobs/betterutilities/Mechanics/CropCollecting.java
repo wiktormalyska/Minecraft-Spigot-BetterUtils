@@ -10,8 +10,11 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
+import org.bukkit.inventory.EquipmentSlot;
+import org.bukkit.inventory.ItemStack;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 public class CropCollecting implements Listener {
@@ -20,48 +23,13 @@ public class CropCollecting implements Listener {
         this.permissions = permissions;
     }
     @EventHandler
-    public boolean event (PlayerInteractEvent e) {
-        if (!e.getPlayer().hasPermission(permissions.getPermission("cropcollect"))){
-            e.getPlayer().sendMessage("You do not have permissions");
-            return false;
-        }
-        if (e.getClickedBlock()==null){
-            e.getPlayer().sendMessage("gownosd");
-            return false;
-        }
-        if (e.getPlayer().getItemInUse()==null){
-            e.getPlayer().sendMessage("gsdqsdowno");
-            return false;
-        }
+    public void event (PlayerInteractEvent e) {
+            if(toolsList().contains(e.getPlayer().getInventory().getItemInMainHand().getType())){
 
-        if (!cropsList().contains(e.getClickedBlock().getType())){
-            e.getPlayer().sendMessage("gowno");
-            return false;
+        }
     }
-        if (!toolsList().contains(e.getPlayer().getItemInUse().getType())){
-            e.getPlayer().sendMessage("item do dupy");
-            return false;
-        }
-
-        Block interactedBlock = e.getClickedBlock();
-        Ageable blockData = (Ageable)interactedBlock.getBlockData();
-        Material blockType = blockData.getMaterial();
-        Location blockLocation = interactedBlock.getLocation();
-        e.getPlayer().sendMessage(blockData.getAge()+" "+blockData.getMaximumAge());
-
-        if (blockData.getAge() != blockData.getMaximumAge())
-            return false;
-
-        interactedBlock.breakNaturally();
-        Block newBlock = blockLocation.getBlock();
-        newBlock.setType(blockType);
-        Ageable newBlockAgeable = (Ageable)newBlock.getBlockData();
-        newBlockAgeable.setAge(0);
-        newBlock.setBlockData(newBlockAgeable);
 
 
-        return true;
-    }
 
     public List<Material> cropsList (){
         List<Material> crops = new ArrayList<>();
