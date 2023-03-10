@@ -1,4 +1,5 @@
 org\bettermobs\betterutilities\Mechanics\CropCollecting.class
+org\bettermobs\betterutilities\Mechanics\CropsController.class
 org\bettermobs\betterutilities\BetterUtilities.class
 org\bettermobs\betterutilities\Commands\SubCommands\Reload.class
 org\bettermobs\betterutilities\Utils\Gui.class
