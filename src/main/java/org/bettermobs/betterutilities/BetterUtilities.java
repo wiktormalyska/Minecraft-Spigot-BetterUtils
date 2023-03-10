@@ -9,6 +9,7 @@ import org.bettermobs.betterutilities.Mechanics.CropCollecting;
 import org.bettermobs.betterutilities.Utils.Crafting.Slabs;
 import org.bettermobs.betterutilities.Utils.Crafting.Sticks;
 import org.bettermobs.betterutilities.Utils.Permissions;
+import org.bstats.bukkit.Metrics;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.checkerframework.checker.units.qual.C;
 
@@ -41,6 +42,8 @@ public final class BetterUtilities extends JavaPlugin {
         permissionsFile.setPermissions(permissions);
         permissionsFile.write();
 
+        int pluginId = 17912;
+        Metrics metrics = new Metrics(this, pluginId);
     }
 
     @Override

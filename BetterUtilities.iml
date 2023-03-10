@@ -19,6 +19,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.bstats:bstats-bukkit:3.0.0" level="project" />
+    <orderEntry type="library" name="Maven: org.bstats:bstats-base:3.0.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.projectlombok:lombok:1.18.26" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.spigotmc:spigot-api:1.19.3-R0.1-SNAPSHOT" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.google.guava:guava:31.1-jre" level="project" />

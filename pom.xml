@@ -39,6 +39,12 @@
                         </goals>
                         <configuration>
                             <createDependencyReducedPom>false</createDependencyReducedPom>
+                            <relocations>
+                                <relocation>
+                                    <pattern>org.bstats</pattern>
+                                    <shadedPattern>org.bettermobs.betterutilities</shadedPattern>
+                                </relocation>
+                            </relocations>
                         </configuration>
                     </execution>
                 </executions>
@@ -64,12 +70,21 @@
     </repositories>
 
     <dependencies>
+        <!-- bStats -->
+        <dependency>
+            <groupId>org.bstats</groupId>
+            <artifactId>bstats-bukkit</artifactId>
+            <version>3.0.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <!-- lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.26</version>
             <scope>provided</scope>
         </dependency>
+        <!-- Spigot -->
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
