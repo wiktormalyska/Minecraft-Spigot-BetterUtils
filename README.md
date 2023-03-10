@@ -8,3 +8,5 @@ Feachures:
 - Logs to Sticks crafting
 - Trashcan command
 - Reload command
+- Collect crops 3x3 field by right-clicking with hoe
+- Auto generate permissions file 
