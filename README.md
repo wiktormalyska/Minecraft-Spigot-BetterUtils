@@ -10,3 +10,4 @@ Feachures:
 - Reload command
 - Collect crops 3x3 field by right-clicking with hoe
 - Auto generate permissions file 
+- BStats Metrics
