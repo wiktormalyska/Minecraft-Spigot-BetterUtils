@@ -1,4 +1,4 @@
-package org.bettermobs.betterutilities.Utils;
+package org.bettermobs.betterutilities.Utils.Permissions;
 
 import lombok.Getter;
 import lombok.Setter;

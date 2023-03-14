@@ -1,4 +1,4 @@
-package org.bettermobs.betterutilities.Mechanics;
+package org.bettermobs.betterutilities.Mechanics.Crops;
 
 import lombok.Setter;
 import org.bukkit.Location;

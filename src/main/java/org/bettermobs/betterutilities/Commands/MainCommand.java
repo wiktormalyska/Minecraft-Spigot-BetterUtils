@@ -2,7 +2,7 @@ package org.bettermobs.betterutilities.Commands;
 
 import org.bettermobs.betterutilities.Commands.SubCommands.Reload;
 import org.bettermobs.betterutilities.Commands.SubCommands.Trashcan;
-import org.bettermobs.betterutilities.Utils.Permissions;
+import org.bettermobs.betterutilities.Utils.Permissions.Permissions;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

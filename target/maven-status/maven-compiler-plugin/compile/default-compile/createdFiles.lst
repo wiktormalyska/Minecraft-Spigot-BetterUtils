@@ -1,11 +1,15 @@
-org\bettermobs\betterutilities\Mechanics\CropCollecting.class
 org\bettermobs\betterutilities\BetterUtilities.class
 org\bettermobs\betterutilities\Commands\SubCommands\Reload.class
 org\bettermobs\betterutilities\Utils\Gui.class
 org\bettermobs\betterutilities\Utils\Permissions.class
 org\bettermobs\betterutilities\Utils\Crafting\Slabs.class
+org\bettermobs\betterutilities\Mechanics\Furnaces\FurnaceType.class
 org\bettermobs\betterutilities\Commands\SubCommands\Trashcan.class
+org\bettermobs\betterutilities\Mechanics\Furnaces\BetterFurnace.class
+org\bettermobs\betterutilities\Mechanics\Crops\CropCollecting.class
 org\bettermobs\betterutilities\Commands\MainCommand.class
 org\bettermobs\betterutilities\Files\PermissionsFile.class
-org\bettermobs\betterutilities\Mechanics\CropsController.class
+org\bettermobs\betterutilities\Mechanics\Furnaces\FurnaceLocation.class
+org\bettermobs\betterutilities\Mechanics\Crops\CropsController.class
 org\bettermobs\betterutilities\Utils\Crafting\Sticks.class
+org\bettermobs\betterutilities\Mechanics\Furnaces\FurnaceController.class

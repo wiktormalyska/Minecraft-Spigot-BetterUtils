@@ -1,9 +1,8 @@
-package org.bettermobs.betterutilities.Mechanics;
+package org.bettermobs.betterutilities.Mechanics.Crops;
 
-import org.bettermobs.betterutilities.Utils.Permissions;
+import org.bettermobs.betterutilities.Utils.Permissions.Permissions;
 import org.bukkit.Location;
 import org.bukkit.Material;
-import org.bukkit.Particle;
 import org.bukkit.block.Block;
 import org.bukkit.block.data.Ageable;
 import org.bukkit.event.EventHandler;
@@ -12,7 +11,6 @@ import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.Damageable;
-import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.ArrayList;
 import java.util.Collection;

@@ -1,9 +1,7 @@
-package org.bettermobs.betterutilities.Files;
+package org.bettermobs.betterutilities.Utils.Permissions;
 
-import lombok.RequiredArgsConstructor;
 import lombok.Setter;
-import lombok.SneakyThrows;
-import org.bettermobs.betterutilities.Utils.Permissions;
+import org.bettermobs.betterutilities.Utils.Permissions.Permissions;
 
 import java.io.FileWriter;
 import java.io.IOException;

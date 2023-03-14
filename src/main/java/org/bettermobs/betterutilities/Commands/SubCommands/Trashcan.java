@@ -1,7 +1,7 @@
 package org.bettermobs.betterutilities.Commands.SubCommands;
 
 import org.bettermobs.betterutilities.Utils.Gui;
-import org.bettermobs.betterutilities.Utils.Permissions;
+import org.bettermobs.betterutilities.Utils.Permissions.Permissions;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
