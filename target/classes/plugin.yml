@@ -1,0 +1,9 @@
+name: BetterUtilities
+version: '1.0'
+main: org.bettermobs.betterutilities.BetterUtilities
+api-version: 1.19
+commands:
+  bu:
+    description: Main Command
+    permission: bettermobs.trashcan
+    usage: bu <command>
