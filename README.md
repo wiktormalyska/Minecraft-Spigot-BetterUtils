@@ -3,7 +3,7 @@ Additional Utilities for your Spigot Minecraft Server
 
 # THIS PLUGIN IS STILL IN PROGRESS
 
-Feachures:
+### Feachures:
 - Slabs to Planks crafting
 - Logs to Sticks crafting
 - Trashcan command
@@ -11,3 +11,6 @@ Feachures:
 - Collect crops 3x3 field by right-clicking with hoe
 - Auto generate permissions file 
 - BStats Metrics
+
+### Terms:
+- Open source
